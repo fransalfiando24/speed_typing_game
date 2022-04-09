@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #e25a53;
+}
+
+.container{
+    position: absolute;
+    width: 50vw;
+    height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(248, 245, 74, 0.938);
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+.title{
+    position: relative;
+    top: 5%;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: rgb(56, 56, 56);
+}
+.title p{
+    font-size: 23px;
+    color: rgb(56, 56, 56);
+}
+
+.word-givin{
+    position: relative;
+    top: 11%;
+    text-align: center;
+}
+
+.word-givin h1{
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 5px ;
+    color: #fbf5e8;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(56, 56, 56);
+}
+
+.word-input{
+    position: relative;
+    top: 15%;
+    text-align: center;
+}
+
+.word-input input{
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+    background-color: transparent;
+    border: 3px solid rgb(46, 46, 46);
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+    color: rgb(46, 46, 46);
+}
+
+.word-input p{
+    font-size: 30px;
+    padding-top: 10px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(56, 56, 56);
+    letter-spacing: 2px;
+}
+
+.countdown{
+    position: relative;
+    top: 18%;
+    text-align: center;
+}
+
+.countdown h2{
+    color: rgb(46, 46, 46);
+}
+
+.countdown h1{
+    font-size: 70px;
+    color: #e24840;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(56, 56, 56);
+}
+
+.scoring{
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+
+.scoring h2{
+    color: rgb(46, 46, 46);
+}
+
+.play{
+    position: relative;
+    top: 8%;
+    text-align: center;
+}
+
+.play button{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(57, 196, 57);
+    border: 2px solid rgb(46, 46, 46);
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(46, 46, 46);
+}
+
+.play button:hover{
+    background-color: rgb(121, 216, 121);
+}
+
+.play button:active{
+    background-color: rgb(68, 158, 68);
+}
+
+/* responsive */
+@media (max-width: 768px){
+    .container{
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(248, 245, 74, 0.938);
+        border-radius: 30px;
+        border: 3px solid black;
+    }
+
+    .title h1{
+        font-size: 38px;
+    }
+
+    .word-input input{
+        width: 90%;
+        height: 50px;
+    }
+    .word-givin h1{
+        font-size: 3rem;
+    }
+}
+
+/* @media (max-width: 600px){
+    .title h1{
+        font-size: 33px;
+    }
+
+    .title p{
+        font-size: 18px;
+    }
+    .word-input input{
+        width: 240px;
+        height: 50px;
+    }
+} */
